@@ -7,9 +7,9 @@ public class Test
  public static void main(String[] args) 
  {
     Fecha f= new Fecha();
-    f.setDia(2);
-    f.setMes(10);
-    f.setAnio(1970);
+    f.setDia(3);
+    f.setMes(12);
+    f.setAnio(1980);
 
     //mostrar en consola
 
@@ -22,8 +22,6 @@ public class Test
     System.out.println(f2.toString());
 
 
-    
-
 
     if(f.equals(f2))
     {
@@ -31,9 +29,16 @@ public class Test
     }
     else
     {
-        System.out.println("Las fechas son Diferentes");
+        System.out.println("Las fechas son Diferentes" );
     }
     
+
+    f.addDias(180);
+    System.out.println(f.toString());
+
+    f2.addDias(360);
+    System.out.println(f2.toString());
+
     
  }    
 }
